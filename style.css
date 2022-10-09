@@ -39,7 +39,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .projects, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -263,16 +263,16 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
+.services, .projects{
     color:#fff;
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.projects .title::before{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.projects .title::after{
     background: #111;
     content: "what i provide";
 }
@@ -383,46 +383,48 @@ section .title::after{
     width: 70%;
 }
 
-/* teams section styling */
-.teams .title::after{
-    content: "who with me";
+/* projects section styling */
+.projects .title::after{
+    content: "What I have made";
 }
-.teams .carousel .card{
+.projects .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
+    height: 250px;
+    width: 350px;
 }
-.teams .carousel .card:hover{
-    background: var(--color-main);
-}
-.teams .carousel .card .box{
+
+.projects .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.projects .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.projects .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid var(--color-main);
+
+.button a{
+    display: inline-block;
+    background: var(--color-main);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid var(--color-main);
     transition: all 0.3s ease;
-}
-.teams .carousel .card:hover img{
-    border-color: #fff;
 }
 .owl-dots{
     text-align: center;
